@@ -2,6 +2,7 @@ from lxml import html
 
 import requests
 import tweepy
+import twitter_auth
 
 
 class Garage:
@@ -35,8 +36,8 @@ garages = [useful_elements[i:i+3] for i in range(0, len(useful_elements), 3)]
 garages = [Garage(str(garage[0]), int(garage[1]), int(garage[2])) for garage in garages]  # replace each list with a Garage object
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("K6VEhAbCCuZCzf0JL7F7bhvE2", "nwpe385UIPRim6wJTsCaJRqDbSauyITL7gT1G6tU8tdXm0AxbR")
-auth.set_access_token("1177696918513819648-tGscTfEtscqFxhko4PvbnLfTmWr0e0", "rhX8zpkxFeSbyKVCtGHBzpFAw0TW7EDfgGi2nCs1YIQCS")
+auth = tweepy.OAuthHandler(twitter_auth.api_key, twitter_auth.api_secret)
+auth.set_access_token(twitter_auth.access_token, twitter_auth.access_token_secret)
 
 api = tweepy.API(auth)
 
