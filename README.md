@@ -15,4 +15,4 @@ To run this script, the user must first gain access to the Twitter API and store
 Pull requests are welcome.
 
 ## Motivations
-The purpose of this project was to gain experience with python, get familiar with using APIs, and to provide my peers with a convenient way to easily secure a parking spot on campus.
+The purpose of this project was to gain experience with python, get familiar with using the Twitter API, and to provide my peers with a convenient way to easily secure a parking spot on campus.
