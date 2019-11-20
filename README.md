@@ -7,15 +7,8 @@ The official Parking Bot Twitter account can be found at [@UCFGarage](https://ww
 
 ## Usage
 
-To run this script, the user must first gain access to the Twitter API and store their API and Access Token keys/secrets in a module named twitter_auth.py like so:
+To run this script, the user must first gain access to the Twitter API and store their API and Access Token keys/secrets in a module named twitter_auth.py
 
-```python
-
-api_key = ""
-api_secret = ""
-access_token = ""
-access_token_secret = ""
-``` 
 ```parking_bot.py``` can then be run by Python manually or automatically (through scheduling tools such as cron)
 
 ## Contributing
